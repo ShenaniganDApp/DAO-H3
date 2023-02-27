@@ -22,57 +22,32 @@ import Layout from "../layouts/Layout.astro";
         >
       </div>
     </header>
-    <div class="flex h-screen w-full flex-col justify-around">
-      <p
-        class="fixed top-24 w-[60%] flex-1 p-4 text-center font-sans text-2xl font-bold text-white md:top-36 lg:text-4xl xl:text-5xl 2xl:text-6xl"
-      >
-        🄰 🄳🅁🄸🄽🄺🄸🄽🄶 🄲🄻🅄🄱 🅆🄸🅃🄷 🄰 🅁🅄🄽🄽🄸🄽🄶 🄿🅁🄾🄱🄻🄴🄼
-      </p>
-      <div
-        class="flex-2 fixed bottom-5 flex w-full flex-col items-center justify-center lg:flex-row lg:p-5"
-      >
-        <!-- <p class="text-white text-4xl font-semibold">Next Event</p> -->
-        <div class="flex-2 flex flex-col gap-3 p-5">
-          <div class="flex flex-col justify-around md:flex-row">
-            <div class="flex flex-row items-center gap-1">
-              <span
-                class="text-left font-dmSans text-xl font-semibold text-white"
-                >When:</span
-              >
-              <span
-                class="text-left font-dmSans text-xl font-semibold text-white"
-                >March 3 @ 6:00PM</span
-              >
-            </div>
-            <div class="flex flex-row items-center gap-1">
-              <p class="text-left font-dmSans text-xl font-semibold text-white">
-                Where:
-              </p>
-              <a
-                href="https://goo.gl/maps/EvcgT9WV1cjDrjBu7"
-                class="font-semibolds text-left font-dmSans text-xl text-white underline"
-                >Parking Lot of ETH Denver!</a
-              >
-            </div>
-          </div>
-          <img
-            class="w-[60vw] shadow-lg lg:w-auto"
-            src="/assets/ethDenverHash.svg"
-            alt="ethDenverHash"
-          />
-        </div>
-        <p
-          class="flex-1 text-center font-dmSans text-sm font-semibold text-white md:text-xl lg:px-4"
-        >
-          It's that time of year, another DAO event! DAO-H3 is invading Denver
-          once again! Last year, we did our first DAO sponsored hash at MCON2
-          and it was a raging success. DAO virgins and Hash virgins ran through
-          the streets of Denver in chili attire, chasing a FREE keg of Raid
-          Brood Red Pil beer! This year we managed to acquire 100 lonely tall
-          boys (and some crypto bros). I'm sure the hash knows what to do 😉.
-        </p>
-      </div>
-    </div>
+    <p class="text-white">
+      Working together with Hash House Harriers to imbue proper treasury
+      management technology<br />
+    </p>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="https://docs.astro.build/"
+        title="Documentation"
+        body="Learn how Astro works and explore the official API docs."
+      />
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+      <Card
+        href="https://astro.build/themes/"
+        title="Themes"
+        body="Explore a galaxy of community-built starter themes."
+      />
+      <Card
+        href="https://astro.build/chat/"
+        title="Community"
+        body="Come say hi to our amazing Discord community. ❤️"
+      />
+    </ul>
   </main>
 </Layout>
 
