@@ -1,83 +1,83 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="DAOH3">
-  <main>
-    <header class="width-full flex">
-      <h1 class="text-gradient">DAO H3</h1>
+  <main
+    class="relative bg-retroHasher bg-50% bg-fixed bg-[right_top_8rem] bg-no-repeat lg:bg-33%"
+  >
+    <header
+      class="flex-start fixed flex w-full items-center justify-between bg-gradient-to-b from-extraDark to-transparent px-3"
+    >
+      <img class="h-20 w-36" src="/assets/logo.svg" alt="DAOH3" />
+
+      <div class="flex items-center justify-end bg-opacity-50">
+        <p class="font-semi-bold hidden text-2xl text-white md:visible">
+          Interested?
+        </p>
+        <button
+          class="2 rounded-xl border border-purple-500 py-2 px-1 font-semibold text-purple-500 transition duration-500 ease-in-out hover:bg-purple-500 hover:text-white"
+          onclick="location.href='http://she.energy/join'"
+          type="button">Join the Discord</button
+        >
+      </div>
     </header>
-    <p class="text-white">
-      Working together with Hash House Harriers to imbue proper treasury
-      management technology<br />
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
+    <div class="flex h-screen w-full flex-col justify-around">
+      <p
+        class="fixed top-24 w-[60%] flex-1 p-4 text-center font-sans text-2xl font-bold text-white md:top-36 lg:text-4xl xl:text-5xl 2xl:text-6xl"
+      >
+        🄰 🄳🅁🄸🄽🄺🄸🄽🄶 🄲🄻🅄🄱 🅆🄸🅃🄷 🄰 🅁🅄🄽🄽🄸🄽🄶 🄿🅁🄾🄱🄻🄴🄼
+      </p>
+      <div
+        class="flex-2 fixed bottom-5 flex w-full flex-col items-center justify-center lg:flex-row lg:p-5"
+      >
+        <!-- <p class="text-white text-4xl font-semibold">Next Event</p> -->
+        <div class="flex-2 flex flex-col gap-3 p-5">
+          <div class="flex flex-col justify-around md:flex-row">
+            <div class="flex flex-row items-center gap-1">
+              <span
+                class="text-left font-dmSans text-xl font-semibold text-white"
+                >When:</span
+              >
+              <span
+                class="text-left font-dmSans text-xl font-semibold text-white"
+                >March 3 @ 6:00PM</span
+              >
+            </div>
+            <div class="flex flex-row items-center gap-1">
+              <p class="text-left font-dmSans text-xl font-semibold text-white">
+                Where:
+              </p>
+              <a
+                href="https://goo.gl/maps/EvcgT9WV1cjDrjBu7"
+                class="font-semibolds text-left font-dmSans text-xl text-white underline"
+                >Parking Lot of ETH Denver!</a
+              >
+            </div>
+          </div>
+          <img
+            class="w-[60vw] shadow-lg lg:w-auto"
+            src="/assets/ethDenverHash.svg"
+            alt="ethDenverHash"
+          />
+        </div>
+        <p
+          class="flex-1 text-center font-dmSans text-sm font-semibold text-white md:text-xl lg:px-4"
+        >
+          It's that time of year, another DAO event! DAO-H3 is invading Denver
+          once again! Last year, we did our first DAO sponsored hash at MCON2
+          and it was a raging success. DAO virgins and Hash virgins ran through
+          the streets of Denver in chili attire, chasing a FREE keg of Raid
+          Brood Red Pil beer! This year we managed to acquire 100 lonely tall
+          boys (and some crypto bros). I'm sure the hash knows what to do 😉.
+        </p>
+      </div>
+    </div>
   </main>
 </Layout>
 
 <style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
+  .body {
+    background-color: #1d1d1d;
   }
 </style>
