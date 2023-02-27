@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-black">
+<html lang="en" class="w-screen bg-extraDark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="metaH3" content={'DAO H3'} />
+    <meta name="metaH3" content={"DAO H3"} />
     <title>DAO H3</title>
   </head>
-  <body>
+  <body class="">
+    <div class="fixed blur-[100px] md:blur-[100px]">
+      <div
+        class="absolute top-[20vh] left-[-80vw] h-72 w-72 rounded-full bg-gradient-to-b from-backgroundRed to-backgroundBlue md:left-[-15vw]"
+      >
+      </div>
+      <div
+        class="absolute top-[90vh] left-[95vw] h-72 w-72 overflow-hidden rounded-full bg-gradient-to-b from-backgroundRed via-backgroundOrange to-backgroundBlue"
+      >
+      </div>
+    </div>
     <slot />
   </body>
 </html>
 <style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;700&display=swap");
   :root {
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
