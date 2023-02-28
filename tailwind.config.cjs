@@ -23,10 +23,14 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         dmSans: ["DM Sans", ...defaultTheme.fontFamily.sans],
+        uncial: ["Uncial Antiqua", ...defaultTheme.fontFamily.sans],
       },
       backgroundSize: {
         "50%": "50%",
         "33%": "33%",
+      },
+      flex: {
+        2: "2 2 0%",
       },
     },
   },
