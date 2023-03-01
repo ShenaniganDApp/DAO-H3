@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro";
     class="relative bg-retroHasher bg-50% bg-fixed bg-[right_top_8rem] bg-no-repeat lg:bg-33%"
   >
     <header
-      class="flex-start fixed flex w-full items-center justify-between bg-gradient-to-b from-extraDark to-transparent px-3"
+      class="flex-start flex w-full items-center justify-between bg-gradient-to-b from-extraDark px-3 backdrop-blur-md"
     >
       <img class="h-20 w-36" src="/assets/logo.svg" alt="DAOH3" />
 
@@ -23,34 +23,38 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </header>
     <div class="flex h-screen w-full flex-col justify-around">
-      <p
-        class="fixed top-24 w-[60%] flex-1 p-4 text-center font-sans text-2xl font-bold text-white md:top-36 lg:text-4xl xl:text-5xl 2xl:text-6xl"
-      >
-        🄰 🄳🅁🄸🄽🄺🄸🄽🄶 🄲🄻🅄🄱 🅆🄸🅃🄷 🄰 🅁🅄🄽🄽🄸🄽🄶 🄿🅁🄾🄱🄻🄴🄼
-      </p>
       <div
-        class="flex-2 fixed bottom-5 flex w-full flex-col items-center justify-center lg:flex-row lg:p-5"
+        class="fixed bottom-5 flex w-full flex-2 flex-col items-center justify-center lg:p-5"
       >
+        <div>
+          <p
+            class="top-24 w-full flex-1 p-2 text-center font-sans text-2xl font-bold text-white md:top-36 md:w-[60%] md:p-4 lg:text-4xl xl:text-5xl 2xl:text-6xl"
+          >
+            🄰-🄳🅁🄸🄽🄺🄸🄽🄶-🄲🄻🅄🄱-🅆🄸🅃🄷-🄰-🅁🅄🄽🄽🄸🄽🄶-🄿🅁🄾🄱🄻🄴🄼
+          </p>
+        </div>
         <!-- <p class="text-white text-4xl font-semibold">Next Event</p> -->
-        <div class="flex-2 flex flex-col gap-3 p-5">
+        <div class="flex flex-2 flex-col gap-3 p-5">
           <div class="flex flex-col justify-around md:flex-row">
             <div class="flex flex-row items-center gap-1">
               <span
-                class="text-left font-dmSans text-xl font-semibold text-white"
+                class="text-md text-left font-dmSans font-semibold text-white md:text-xl"
                 >When:</span
               >
               <span
-                class="text-left font-dmSans text-xl font-semibold text-white"
+                class="text-md text-left font-dmSans font-semibold text-white md:text-xl"
                 >March 3 @ 6:00PM</span
               >
             </div>
             <div class="flex flex-row items-center gap-1">
-              <p class="text-left font-dmSans text-xl font-semibold text-white">
+              <p
+                class="text-md text-left font-dmSans font-semibold text-white md:text-xl"
+              >
                 Where:
               </p>
               <a
                 href="https://goo.gl/maps/EvcgT9WV1cjDrjBu7"
-                class="font-semibolds text-left font-dmSans text-xl text-white underline"
+                class="font-semibolds text-md text-left font-dmSans text-white underline md:text-xl"
                 >Parking Lot of ETH Denver!</a
               >
             </div>
@@ -138,81 +142,111 @@ import Layout from "../layouts/Layout.astro";
       <p
         class="relative pt-24 pb-10 text-center text-4xl font-bold text-white lg:text-6xl"
       >
-        How do DAOs Help?
+        What is the DAO in DAOH3?
       </p>
 
       <div
-        class="relative flex w-full flex-col items-center justify-around gap-3 px-[10%] pb-20 text-center md:px-[15%] lg:flex-row lg:px-4"
+        class="relative flex w-full flex-col items-center justify-around gap-3 px-[5%] pb-3 text-center md:px-[15%] lg:flex-row lg:px-4"
       >
         <div
-          class="flex flex-col items-center justify-center gap-3 rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
+          class="flex flex-1 flex-col items-center justify-center gap-3 rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
         >
-          <img class="color-white h-32 w-32" src="/assets/liability.svg" />
-          <p class="text-2xl font-semibold text-white lg:text-3xl">
-            Liability Coverage
-          </p>
-          <p class="text-center font-sans text-xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            optio maiores expedita placeat voluptatem commodi culpa dolorem.
-            Culpa ullam dicta rem iure ea asperiores, recusandae exercitationem,
-            est perspiciatis itaque repudiandae.
-          </p>
-
-          <a class="text-center font-sans text-xl text-white"
-            >Click to Read More →</a
-          >
-        </div>
-        <div
-          class="flex flex-col items-center justify-center gap-3 rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
-        >
-          <img class="color-white h-32 w-32" src="/assets/safe.svg" />
+          <div class="flex w-full flex-row items-center justify-between p-2">
+            <img class="color-white h-12 w-12" src="/assets/safe.svg" />
+            <a
+              class="absolute top-4 right-5 text-center font-sans text-4xl text-white"
+              href="https://safe.global/#getting-started">→</a
+            >
+          </div>
           <p class="text-2xl font-semibold text-white lg:text-3xl">
             Treasury Management
           </p>
           <p class="text-center font-sans text-xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            optio maiores expedita placeat voluptatem commodi culpa dolorem.
-            Culpa ullam dicta rem iure ea asperiores, recusandae exercitationem,
-            est perspiciatis itaque repudiandae.
+            DAOH3 uses a Gnosis Safe to manage the treasury. This allows us to
+            securely store and manage our funds in a decentralized manner, with
+            multi-signature capabilities and customizable access control. As
+            DAOH3 has decided not to wrap the Safe in an unincorporated
+            non-profit association in the state of Delaware, this would allow us
+            to legally protect our members while providing a formal structure
+            for the group's governance and operation. With the Gnosis Safe and
+            the non-profit association, we can ensure that all transactions are
+            transparent and verifiable on the blockchain, while also minimizing
+            the risk of loss or theft. Additionally, this approach would allow
+            us to raise funds and solicit donations from supporters, providing
+            us with the resources we need to grow the group and continue
+            providing unique and exciting experiences for our members.
           </p>
-          <a class="text-center font-sans text-xl text-white"
-            >Click to Read More →</a
-          >
+        </div>
+        <div
+          class="flex w-full flex-1 flex-col items-center justify-center gap-3 self-stretch rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
+        >
+          <div class="flex w-full flex-row items-center justify-between p-2">
+            <img class="color-white h-12 w-12" src="/assets/liability.svg" />
+            <a
+              class="absolute top-4 right-5 text-center font-sans text-4xl text-white"
+              href="/">→</a
+            >
+          </div>
+          <p class="text-2xl font-semibold text-white lg:text-3xl">
+            Liability Coverage
+          </p>
+          <p class="text-center font-sans text-xl text-white">Coming soon</p>
         </div>
       </div>
       <div
-        class="relative flex w-full flex-col items-center justify-around gap-3 px-[10%] pb-20 text-center md:px-[15%] lg:flex-row lg:px-8"
+        class="relative flex w-full flex-col items-center justify-around gap-3 px-[5%] pb-20 text-center md:px-[15%] lg:flex-row lg:px-4"
       >
         <div
-          class="flex flex-col items-center justify-center gap-3 rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
+          class="flex w-full flex-1 flex-col items-center justify-center gap-3 self-stretch rounded-xl border border-white bg-gray-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
         >
-          <img class="color-white h-32 w-32" src="/assets/donations.svg" />
+          <div class="flex w-full flex-row items-center justify-between p-2">
+            <a
+              class="absolute top-4 right-5 text-center font-sans text-4xl text-white"
+              href="https://docs.wrappr.wtf/how-to/non-profit/#non-profit">→</a
+            >
+            <img class="color-white h-12 w-12" src="/assets/donations.svg" />
+          </div>
           <p class="text-2xl font-semibold text-white lg:text-3xl">Donations</p>
           <p class="text-center font-sans text-xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            optio maiores expedita placeat voluptatem commodi culpa dolorem.
-            Culpa ullam dicta rem iure ea asperiores, recusandae exercitationem,
-            est perspiciatis itaque repudiandae.
+            As a non-profit association, DAOH3 can raise funds through
+            donations, charity runs, merchandise sales, and corporate
+            sponsorships. By creating clear rules and guidelines, the group can
+            provide assurance to donors that their contributions will be used
+            responsibly. DAOH3 can maximize its fundraising efforts by utilizing
+            its online presence and engaging with supporters through social
+            media, email marketing, and its website. The group can also ensure
+            transparency and accountability by providing regular updates on how
+            funds are being used and financial statements. Through strategic
+            fundraising efforts, DAOH3 can build a strong financial foundation
+            for its future growth and success.
           </p>
-          <a class="text-center font-sans text-xl text-white"
-            >Click to Read More →</a
-          >
         </div>
 
         <div
-          class="bg-extraDarkbg-gray-300 flex flex-col items-center justify-center gap-3 rounded-xl border border-white bg-slate-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
+          class="flex w-full flex-1 flex-col items-center justify-center gap-3 rounded-xl border border-white bg-slate-300 bg-opacity-30 p-2 backdrop-blur-md lg:p-4"
         >
-          <img class="color-white h-32 w-32" src="/assets/anonymous.svg" />
+          <div class="flex w-full flex-row items-center justify-between p-2">
+            <img class="color-white h-12 w-12" src="/assets/anonymous.svg" />
+            <a
+              class="absolute top-4 right-5 text-center font-sans text-4xl text-white"
+              href="https://docs.wrappr.wtf/how-to/quick-notes/#legality-of-key-signatures"
+              >→</a
+            >
+          </div>
           <p class="text-xl font-semibold text-white lg:text-3xl">Anonymity</p>
           <p class="text-center font-sans text-xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            optio maiores expedita placeat voluptatem commodi culpa dolorem.
-            Culpa ullam dicta rem iure ea asperiores, recusandae exercitationem,
-            est perspiciatis itaque repudiandae.
+            DAOH3, a decentralized autonomous organization (DAO), enables its
+            users to retain anonymity by utilizing blockchain technology to
+            protect user identities. Unlike traditional organizations, DAOH3
+            operates on a peer-to-peer network and does not require personal
+            information or identification from its members. Transactions are
+            recorded on the blockchain, which ensures transparency and
+            immutability while protecting user privacy. Additionally, DAOH3
+            allows users to participate and vote on proposals anonymously,
+            further protecting their identities. By utilizing these innovative
+            technologies, DAOH3 empowers its members to participate in
+            decentralized decision-making while preserving their anonymity.
           </p>
-          <a class="text-center font-sans text-xl text-white"
-            >Click to Read More →</a
-          >
         </div>
       </div>
     </div>
@@ -221,7 +255,6 @@ import Layout from "../layouts/Layout.astro";
       <div class="h-56 w-full"></div>
       <div class="h-56 w-full"></div> -->
   </main>
-</Layout>
 
   <style>
     .body {
